@@ -60,6 +60,7 @@ void PointerFunctions() {
 }
 
 void DynamicMemoryAllocation() {
+    int size; 
     
 }
 
