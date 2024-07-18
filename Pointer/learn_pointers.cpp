@@ -61,7 +61,23 @@ void PointerFunctions() {
 
 void DynamicMemoryAllocation() {
     int size; 
-    
+    cout << "Enter the size of the array: ";
+    cin >> size;
+
+    int * arr = new int[size];
+
+    cout << "Enter " << size << " elements: ";
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "The elements are: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    delete[] arr;
 }
 
 int main() {
@@ -70,5 +86,6 @@ int main() {
     Array();
     PointerToPointer();
     PointerFunctions();
+    DynamicMemoryAllocation();
     return 0;
 }
