@@ -80,6 +80,25 @@ void DynamicMemoryAllocation() {
     delete[] arr;
 }
 
+class Rectangle {
+    public:
+        int width, height;
+
+        Rectangle(int w, int h) : width(w), height(h) {}
+
+        int area() {
+            return width * height;
+        }
+};
+
+void PointerClass() {
+    Rectangle* rect = new Rectangle(5, 10);
+
+    cout << "Area of rectangle: " << rect->area() << endl;
+
+    delete rect; 
+}
+
 int main() {
     Basics();
     Arthimetic();
@@ -87,5 +106,6 @@ int main() {
     PointerToPointer();
     PointerFunctions();
     DynamicMemoryAllocation();
+    PointerClass();
     return 0;
 }
