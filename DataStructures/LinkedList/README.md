@@ -1,6 +1,6 @@
 ## Introduction to Linked Lists
 
-A linked list is a linear data structure where each element (node) contains a data part and a reference (or link) to the next node in the sequence. Unlike arrays, linked lists do not require contiguous memory locations, which makes them more flexible in terms of memeory management.
+A linked list is a linear data structure where each element (node) contains a data part and a reference (or link) to the next node in the sequence. Unlike arrays, linked lists do not require contiguous memory locations, which makes them more flexible in terms of memory management.
 
 ## Types of linked lists
 
